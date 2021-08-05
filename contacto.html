@@ -1,0 +1,71 @@
+<html lang='es'>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Peliculas</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<div id="main">
+			<div class="content">
+				<h1 class="title">
+					Rankings de Películas y Series
+				</h1><!-- h1: h viene de "header", significa encabezado, es un título; cuanto más grande el número, más chico el título. -->
+				<p>Ranking de mejores peliculas y series - Chicas Programadoras.</p> <!-- Etiqueta de parrafo. Inicialmente sin estilos especificos pero que separa correctamente las cosas. -->
+				<ul class="menu">
+					<li class="menu-item">
+						<a href="./index.html">
+							<h2>Inicio</h2> <!-- Encabezado de menor tamaño que el h1. Descienden jerarquicamente. -->
+						</a>
+					</li>
+					<li class="menu-item active">
+						<a href="./peliculas.html">
+							<h2>Películas</h2> <!-- Encabezado de menor tamaño que el h1. Descienden jerarquicamente. -->
+						</a>
+					</li>
+					<li class="menu-item">
+						<a href="./series.html">
+							<h2>Series</h2> <!-- Encabezado de menor tamaño que el h1. Descienden jerarquicamente. -->
+						</a>
+					</li>
+				</ul>
+                <form method="GET" action="series.html">
+                    <div class="form-element">
+                        <label for="nombre-usuario">Nombre de usuario:</label>
+                        <input required id="nombre-usuario" type="text" name="NombreUsuario" placeholder="Juan Pérez"/>
+                    </div>
+					<div class="form-element">
+                        <label for="tiene-suscripcion">Ya tengo suscripción</label>
+                        <input id="tiene-suscripcion" type="checkbox" name="Afiliado"/>
+                    </div>
+                    <div class="form-element">
+                        <label for="tyc">Acepto TyC</label>
+                        <input id="tyc" type="checkbox" name="tyc" required/>
+                    </div>
+                    <div class="form-element">
+                        <p>Elegi tu pais:</p>
+                        <input type="radio" id="Argentina" name="elegi_pais" value="Argentina">
+                        <label for="html">Argentina</label><br>
+                        <input type="radio" id="España" name="elegi_pais" value="España">
+                        <label for="css">España</label><br>
+                        <input type="radio" id="Chile" name="elegi_pais" value="Chile">
+                        <label for="javascript">Chile</label>
+                    </div>
+					<button type="submit">
+						<b>Enviar!</b>
+					</button>
+				</form>
+			</div>
+			<footer class="footer">
+				<div class="footer-section">
+					<div class="footer-section-title"></div>
+				</div>
+				<div class="footer-section">
+					<div class="footer-section-title"></div>
+				</div>
+				<div class="footer-section">
+					<div class="footer-section-title"></div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

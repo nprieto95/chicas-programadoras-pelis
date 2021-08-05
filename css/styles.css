@@ -168,3 +168,23 @@ h2 {
     margin: 10px 0 10px 0;
     text-align: center;
 }
+
+form {
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-element {
+    margin-bottom: 15px;
+}
+
+.form-element > input[type=radio],
+.form-element > p {
+    margin: 0;
+    padding: 0;
+}
+
+button[type=submit] {
+    width: 100px;
+}
