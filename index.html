@@ -62,6 +62,16 @@
 		<style></style>
 		<script>/** Etiqueta de Script donde puede haber codigo JavaScript. Pero lo dejamos en un archivo separado. */</script>
 		<script>
+			// var variableVar = 1;
+			// let variableLet = 2;
+			const variableConst = 3;
+
+			// variableVar = 4;
+			// variableLet = 5;
+
+			const copiaVariableVar = variableVar;
+			const copiaVariableLet = variableLet;
+
 			// Notas a lo largo del cuatrimestre
 			var notasNahuel = [7, 10, 9, 2, 7];
 			var notasNico = [7, 10, 9, 8, 7];
@@ -80,11 +90,16 @@
 				}
 			}while(notaActual != "stop")
 
-			alert("El promedio de Jamel es " + calcularPromedio(notasJamel))
+			// alert("El promedio de Jamel es " + calcularPromedio(notasJamel))
 
 			// Siempre pasarle un array de números a esta función
 			function calcularPromedio(notas)
 			{
+				let variableLet = 2;
+				var variableVar = 4;
+
+				var resultado = null;
+
 				var sumaDeNotas = 0;
 				var cantidadDeNotas = notas.length;
 				for (let i = 0; i < cantidadDeNotas; i++) {
@@ -94,16 +109,22 @@
 				return sumaDeNotas / cantidadDeNotas;
 			}
 
+			function obtenerDesaprobados(notas)
+			{
+				var resultado = "";
+				return resultado;
+			}
+
 			var promedioNahuel = calcularPromedio(notasNahuel);
 			var promedioNico = calcularPromedio(notasNico);
 
 			// alert("El promedio de Nahuel es " + promedioNahuel + " y el de Nico es " + promedioNico);
 		</script>
 		<script>
-			var a = 5;
-			var b = 5;
-			alert(a++);
-			alert(b++);
+			// var a = 5;
+			// var b = 5;
+			// alert(a++);
+			// alert(b++);
 		</script>
 	</body>
 </html>
