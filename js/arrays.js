@@ -5,6 +5,7 @@
 //     alert(mentores[i]);
 // }
 
+// Declarando un arreglo de días
 var dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
 
 // for(var i = 6; i >= 0; i = i - 3 )
