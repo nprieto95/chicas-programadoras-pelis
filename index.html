@@ -4,7 +4,6 @@
 		<title>Rankings de Películas y Series</title> <!-- Titulo de la pagina, va a aparecer en la pestaña del navegador. Si esto no existe, va a mostrar el nombre del archivo que estamos viendo. -->
 		<link rel="stylesheet" href="css/styles.css" />
 		<!-- <script src="./js/index.js"></script> -->
-		<!-- <script src="./js/arrays.js"></script> -->
 	</head> <!-- Cierre de la cabecera del documento HTML. Todos las etiquetas necesitan un bloque de cierre. -->
 	<body> <!-- Cuerpo del documento HTML. El contenido se ubica principalmente dentro de esta etiqueta. -->
 		<div id="main">
@@ -61,49 +60,5 @@
 		<!-- Las etiquetas de style nos permiten agrupar los estilos en un unico lugar y evitar agregar diferentes reglas a cada etiqueta HTML que tengamos. -->
 		<style></style>
 		<script>/** Etiqueta de Script donde puede haber codigo JavaScript. Pero lo dejamos en un archivo separado. */</script>
-		<script>
-			// Notas a lo largo del cuatrimestre
-			var notasNahuel = [7, 10, 9, 2, 7];
-			var notasNico = [7, 10, 9, 8, 7];
-
-			var notasJamel = [];
-			var notaActual = "";
-
-			do
-			{
-				notaActual = prompt("Ingrese una nota");
-				if(notaActual != "stop")
-				{
-					var valorParseado = parseInt(notaActual)
-					if(!isNaN(valorParseado))
-						notasJamel.push(valorParseado);
-				}
-			}while(notaActual != "stop")
-
-			alert("El promedio de Jamel es " + calcularPromedio(notasJamel))
-
-			// Siempre pasarle un array de números a esta función
-			function calcularPromedio(notas)
-			{
-				var sumaDeNotas = 0;
-				var cantidadDeNotas = notas.length;
-				for (let i = 0; i < cantidadDeNotas; i++) {
-					var element = notas[i];
-					sumaDeNotas += element;
-				}
-				return sumaDeNotas / cantidadDeNotas;
-			}
-
-			var promedioNahuel = calcularPromedio(notasNahuel);
-			var promedioNico = calcularPromedio(notasNico);
-
-			// alert("El promedio de Nahuel es " + promedioNahuel + " y el de Nico es " + promedioNico);
-		</script>
-		<script>
-			var a = 5;
-			var b = 5;
-			alert(a++);
-			alert(b++);
-		</script>
 	</body>
 </html>
