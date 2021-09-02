@@ -31,3 +31,18 @@ do {
 } while (operador !== "sumar" && operador !== "restar" && operador !== "multiplicar" && operador !== "dividir");
 
 
+function calcular(operador, operando1, operando2){
+    let operando1Int = parseInt (operando1)
+    let operando2Int = parseInt (operando2)
+    switch(operador){
+        case "sumar":
+        return operando1Int + operando2Int;
+        case "restar":
+        return operando1Int - operando2Int;
+        case "multiplicar":
+        return operando1Int * operando2Int;
+        case "dividir":
+        return operando1Int / operando2Int;
+    }
+}
+console.log(calcular(operador, operando1, operando2))
