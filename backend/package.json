@@ -4,6 +4,8 @@
   "description": "servidor de prueba",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "start:express": "node index_express.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
