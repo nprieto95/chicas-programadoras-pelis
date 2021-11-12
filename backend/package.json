@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "start:express": "node index_express.js",
+    "start:ejemplo:fetch": "node index_ejemplo_fetch.js",
+    "start:ejemplo:fetch:2": "node index_ejemplo_fetch_2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
